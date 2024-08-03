@@ -1,0 +1,250 @@
+# Audio
+audio.deep_buffer.media=true
+audio.offload.min.duration.secs=30
+audio.offload.video=true
+ro.af.client_heap_size_kbyte=7168
+ro.config.media_vol_steps=25
+ro.config.vc_call_vol_steps=11
+
+# Camera
+camera.disable_zsl_mode=true
+vendor.camera.aux.packagelist=com.android.camera,org.lineageos.aperture,co.aospa.sense,org.pixelexperience.faceunlock
+vendor.camera.aux.packagelist2=org.derpfest.flash,com.google.android.GoogleCamera,com.google.android.GoogleCameraEng
+ro.face.sense_service.camera_id=5
+persist.camera.sat.fallback.dist=45
+persist.camera.sat.fallback.dist.d=5
+persist.camera.sat.fallback.luxindex=310
+persist.camera.sat.fallback.lux.d=50
+persist.camera.managebuffer.enable=1
+
+# CNE
+persist.vendor.cne.feature=1
+
+# Data modules
+persist.data.df.dev_name=rmnet_usb0
+persist.vendor.data.mode=concurrent
+ro.vendor.use_data_netmgrd=true
+
+# Dex2oat
+dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.systemuicompilerfilter=speed
+dalvik.vm.image-dex2oat-filter=speed
+dalvik.vm.image-dex2oat-threads=8
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.dex2oat-threads=8
+
+# Display post-processing
+ro.qualcomm.cabl=0
+ro.vendor.display.ad=1
+ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg
+ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
+ro.vendor.display.sensortype=2
+debug.sf.disable_client_composition_cache=1
+
+# DPM
+persist.vendor.dpm.loglevel=0
+persist.vendor.dpm.nsrm.bkg.evt=3955
+persist.vendor.dpmhalservice.enable=1
+
+# Graphics
+debug.sdm.support_writeback=0
+debug.gralloc.enable_fb_ubwc=1
+persist.demo.hdmirotationlock=false
+persist.sys.sf.native_mode=0
+ro.opengles.version=196610
+sdm.debug.disable_inline_rotator=1
+sdm.debug.disable_inline_rotator_secure=1
+ro.hardware.egl=adreno
+ro.hardware.vulkan=adreno
+debug.sf.auto_latch_unsignaled=0
+debug.sf.frame_rate_multiple_threshold=60
+ro.egl.blobcache.multifile=true
+ro.egl.blobcache.multifile_limit=33554432
+graphics.gpu.profiler.support=true
+debug.hwui.renderer=opengl
+debug.composition.type=opengl
+debug.sf.disable_backpressure=1
+vendor.display.disable_rotator_downscale=1
+debug.sf.enable_transaction_tracing=false
+
+# HWUI
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
+
+# Suspend properties
+suspend.short_suspend_threshold_millis=2000
+suspend.short_suspend_backoff_enabled=true
+suspend.max_sleep_time_millis=40000
+
+# Legit Touch Hax
+touch.size.scale=1
+touch.size.bias=0
+touch.size.isSummed=0
+touch.pressure.scale=0.001
+touch.distance.calibration=none
+touch.distance.scale=0
+touch.coverage.calibration=box
+touch.gestureMode=spots
+MultitouchSettleInterval=1ms
+MultitouchMinDistance=1px
+TapInterval=1ms
+TapSlop=1px
+
+# Multi-Gen LRU
+persist.device_config.mglru_native.lru_gen_config=core
+
+# Disable Skia tracing by default
+debug.sf.predict_hwc_composition_strategy=0
+debug.hwui.skia_atrace_enabled=false
+
+# Cached app compaction
+persist.device_config.activity_manager.use_compaction=true
+
+# IMS
+ro.telephony.block_binder_thread_on_incoming_calls=false
+persist.vendor.ims.disableUserAgent=0
+
+# IMS Debugging
+persist.vendor.ims.disableADBLogs=1
+persist.vendor.ims.disableDebugLogs=1
+persist.vendor.ims.disableIMSLogs=1
+persist.vendor.ims.disableQXDMLogs=1
+
+# LMKD
+ro.lmk.low=1001
+ro.lmk.medium=800
+ro.lmk.critical=0
+ro.lmk.critical_upgrade=false
+ro.lmk.upgrade_pressure=100
+ro.lmk.downgrade_pressure=100
+ro.lmk.kill_heaviest_task=true
+ro.lmk.kill_timeout_ms=100
+ro.lmk.use_minfree_levels=true
+ro.lmk.log_stats=true
+
+# Media
+media.stagefright.thumbnail.prefer_hw_codecs=true
+media.settings.xml=/vendor/etc/media_profiles_vendor.xml
+persist.mm.enable.prefetch=true
+mm.enable.smoothstreaming=true
+
+# QC framework value-adds
+ro.vendor.qti.va_aosp.support=1
+
+# RCS
+persist.rcs.supported=1
+
+# RIL
+DEVICE_PROVISIONED=1
+persist.radio.multisim.config=dsds
+persist.sys.fflag.override.settings_provider_model=false
+persist.vendor.radio.apm_sim_not_pwdn=1
+persist.vendor.radio.custom_ecc=1
+persist.vendor.radio.flexmap_type=none
+persist.vendor.radio.force_on_dc=true
+persist.vendor.radio.mt_sms_ack=30
+persist.vendor.radio.procedure_bytes=SKIP
+persist.vendor.radio.rat_on=combine
+persist.vendor.radio.report_codec=1
+persist.vendor.radio.sib16_support=1
+ril.subscription.types=NV,RUIM
+ro.com.android.dataroaming=true
+ro.telephony.default_network=10,10
+telephony.lteOnCdmaDevice=1
+
+# Seamless transfer
+sys.fflag.override.settings_seamless_transfer=true
+
+# SurfaceFlinger
+debug.sf.enable_hwc_vds=1
+debug.sf.hw=1
+debug.sf.latch_unsignaled=1
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+ro.surface_flinger.has_wide_color_display=false
+ro.surface_flinger.has_HDR_display=true
+ro.surface_flinger.max_virtual_display_dimension=4096
+ro.surface_flinger.protected_contents=true
+ro.surface_flinger.use_color_management=true
+ro.surface_flinger.wcg_composition_dataspace=143261696
+ro.surface_flinger.set_idle_timer_ms=80
+ro.surface_flinger.set_touch_timer_ms=200
+ro.surface_flinger.set_display_power_timer_ms=1000
+ro.surface_flinger.enable_frame_rate_override=false
+ro.surface_flinger.vsync_event_phase_offset_ns=2000000
+
+# App launch prefetching (IORapd)
+persist.device_config.runtime_native_boot.iorap_readahead_enable=false
+ro.iorapd.enable=false
+vendor.iop.enable_prefetch_ofr=0
+iorapd.perfetto.enable=false
+iorapd.readahead.enable=false
+
+# Log
+persist.log.tag.AnalyticsService=S
+persist.log.tag.CHIUSECASE=S
+persist.log.tag.CVP=S
+persist.log.tag.CamX=S
+persist.log.tag.CompatibilityChangeReporter=S
+persist.log.tag.ContrastColorUtil=S
+persist.log.tag.DeviceStatisticsService=S
+persist.log.tag.DrmLibTime=S
+persist.log.tag.FastChargingPreferenceController=S
+persist.log.tag.IntervalStats=S
+persist.log.tag.KernelCpuUidActiveTimeReader=S
+persist.log.tag.NearbySharing=S
+persist.log.tag.OpenGLRenderer=S
+persist.log.tag.QC-time-services=S
+persist.log.tag.ResourcesCompat=S
+persist.log.tag.SQLiteLog=S
+persist.log.tag.SYNX-UMD=S
+persist.log.tag.Tracer=S
+persist.log.tag.TrafficStats=S
+persist.log.tag.b/223498680=S
+persist.log.tag.bt_stack=S
+persist.log.tag.cnss-daemon=S
+persist.log.tag.ultrasound_extn=S
+persist.log.tag.wificond=S
+
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
+# Zram
+ro.zram.mark_idle_delay_mins=60
+ro.zram.first_wb_delay_mins=1440
+ro.zram.periodic_wb_delay_hours=24
+
+# Powersaving
+ro.vold.umsdirtyratio=20
+power.saving.mode=1
+pm.sleep_mode=1
+vendor.post_boot.parsed=1
+ro.config.small_battery=true
+
+# Radio Powersaving
+ro.ril.disable.power.collapse=0
+persist.radio.add_power_save=1
+ro.mot.eri.losalert.delay=100
+ro.ril.fast.dormancy.timeout=3
+ro.ril.fast.dormancy.rule=1
+
+# Memory Management
+ro.config.fha_enable=true
+ro.sys.fw.bg_apps_limit=32
+ro.config.dha_cached_max=16
+ro.config.dha_empty_max=42
+ro.config.dha_empty_init=32
+ro.config.dha_lmk_scale=0.545
+ro.config.dha_th_rate=2.3
+ro.config.sdha_apps_bg_max=64
+ro.config.sdha_apps_bg_min=8
+persist.sys.fflag.override.settings_enable_monitor_phantom_procs=false
+ro.vendor.qti.sys.fw.bservice_enable=true
+
+# SPU
+vendor.gatekeeper.disable_spu=true
+
+# Shutdown
+ro.build.shutdown_timeout=2
+
+# Filesystem
+fs_mgr.overlayfs.prefer_cache_backing_storage=true
