@@ -20,6 +20,10 @@ TARGET_SCREEN_DENSITY := 440
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/xiaomi/dipper.config
 
+ifeq ($(TARGET_BUILD_PERMISSIVE),true)
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+endif
+
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
